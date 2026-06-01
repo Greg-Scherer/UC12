@@ -1,0 +1,115 @@
+/* 
+.container-pai{
+    background:#242424;
+    height: 500px;
+    padding:3px;
+
+    torna o container um container flexivel
+        display:flex;
+    /* indica em que direção os items serão dispostos (linhas ou colunas)
+    flex-direction: row;  Row = um do lado do outro, Column = um embaixo do outro 
+    indica como os items vão ser dispostos no eixo principal 
+    justify-content: center;  Space-around = espaço igual entre os items, Space-between = o primeiro item fica colado na borda esquerda e o último item fica colado na borda direita, Center = os items ficam centralizados, Flex-start = os items ficam colados na borda esquerda, Flex-end = os items ficam colados na borda direita (IMPORTANTE: em row(Linha),  o eixo principal é horizontal, Em column (Coluna), o eixo principal é vertical) 
+    align-items: center;  indica como os items vão ser dispostos no eixo transversal (IMPORTANTE: em row(Linha),  o eixo transversal é vertical, Em column (Coluna), o eixo transversal é horizontal) 
+    gap: 20px;  indica o espaçamento entre os items 
+    flex-wrap: wrap;  indica se os items podem ou não quebrar de linha quando não houver mais espaço disponível (nowrap = os items não quebram de linha, wrap = os items quebram de linha) 
+/* }
+
+.item{
+
+    background: #a1a1a1;
+    padding:20px;
+}
+.start{
+    align-self: flex-start; /* indica como o item vai ser disposto no eixo transversal (IMPORTANTE: em row(Linha),  o eixo transversal é vertical, Em column (Coluna), o eixo transversal é horizontal) 
+} */
+
+
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #242424;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-frame {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    
+}
+
+.main-item{
+    background: #545454;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.main-item img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.main-item h2{
+    color: #fff;
+    margin-top: 10px;
+}
+.main-item h4{
+    color: #b2b2b2;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

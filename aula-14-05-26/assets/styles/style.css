@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-container {
+    display: flex;
+    gap: 40px;
+}
+
+.border-box {
+    width: 370px;
+    height: 540px;
+
+    padding: 3px;
+
+    border-radius: 25px;
+
+    background: rgb(23, 23, 23);
+    background-size: 400% 400%;
+
+    animation: borderAnimation 6s linear infinite;
+
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.6);
+}
+
+.white-border-box {
+    width: 370px;
+    height: 540px;
+
+    padding: 3px;
+
+    border-radius: 25px;
+
+    background: white;
+
+    background-size: 400% 400%;
+
+    animation: borderAnimation 6s linear infinite;
+
+    box-shadow: 0px 0px 35px rgba(255,255,255,0.15);
+}
+
+.product-box {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dark {
+    background: #2a2a2a;
+}
+
+.light {
+    background: #f5f5f5;
+}
+
+.product-image {
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+}
+
+.product-content {
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.dark .product-title {
+    color: rgb(255, 255, 255);
+}
+
+.light .product-title {
+    color: black;
+}
+
+.product-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.dark .product-description {
+    color: #cfcfcf;
+}
+
+.light .product-description {
+    color: #555;
+}
+
+.product-description {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.product-price {
+    color: #4cff74;
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.buy-button {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.dark .buy-button {
+    background: #4cff74;
+    color: black;
+}
+
+
+.white-btn {
+    background: black;
+    color: white;
+}
+
+.buy-button:hover {
+    transform: scale(1.03);
+}
+
+@keyframes borderAnimation {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}

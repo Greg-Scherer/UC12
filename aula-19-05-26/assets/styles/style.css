@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-pai{
+    background-color: rgb(82, 82, 82);
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 
+    200px
+    200px
+    200px;
+    
+    
+}
+
+.container-filho{
+    background-color: rgb(216, 216, 216);
+    width: 100px;
+    height: 100px;
+    
+}

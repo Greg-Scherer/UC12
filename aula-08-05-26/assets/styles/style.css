@@ -1,0 +1,54 @@
+/*
+    elemento {
+        propriedade: valor;
+    }
+*/
+
+/********** Elementos de texto **********/
+
+h1 {
+    color: blue; /* Cor do text */ 
+    background-color: lightgray,  /* Cor de fundo */
+}
+
+h2 {
+    color: red;
+    background-color: lightgray;
+    font-size: 50px; /* Tamanho da fonte */
+}
+
+p {
+    color:red
+}
+
+    /* pra alterar propriedades de classes, tem que usar: .nome-da-classe */
+
+.cor-verde {
+    color: green
+}
+
+a {
+    color: red;
+    text-decoration: none; /* muda a decoração do texto */;
+
+}
+
+
+img {
+    width: 200px; /* Largura da imagem */
+    height: auto; /* Altura da imagem, auto pra manter a proporção */
+}
+
+button {
+    background-color: blue;
+    /* border: none; Tira a borda do botão */
+    color: white; /* Cor do texto do botão */
+    border-radius: 30px; /* Deixa o botão arredondado */
+    padding: 5px 10px; /* Espaçamento interno do botão, 5px Y, 10px X, lembrar do minecraft*/
+}
+
+/* pra alterar propriedades de elementos quando o mouse estiver em cima, tem que usar: elemento:hover */
+
+button:hover {
+    background-color: lightblue; /* Cor do botão quando o mouse estiver em cima */;
+}
