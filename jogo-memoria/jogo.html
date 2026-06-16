@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória - Copa do Mundo</title>
+  <link rel="stylesheet" href="./assets/styles/jogo.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <h1>Jogo da Memória</h1>
+      </div>
+      <a href="index.html" class="botao-voltar">Voltar</a>
+    </header>
+
+    <section class="status">
+      <div class="status-card">
+        <span>Jogadas</span>
+        <strong id="jogadas">0</strong>
+      </div>
+      <div class="status-card">
+        <span>Pares</span>
+        <strong id="pares">0/8</strong>
+      </div>
+    </section>
+
+    <section class="board-container">
+      <div class="board" id="board">
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+      </div>
+    </section>
+
+    <section id="winText" class="win-message" style="display:none;">
+      <p>Parabéns! Você venceu!</p>
+    </section>
+  </main>
+  <script src="./assets/scripts/jogo.js"></script>
+</body>
+</html>
